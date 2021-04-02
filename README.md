@@ -1,3 +1,11 @@
+Projeto da loja feito seguindo as intruções dadas com todos os GET e POST necessários
+
+- [x] Core
+- [x] Autenticação
+- [ ] Cash
+- [ ] Docker
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
