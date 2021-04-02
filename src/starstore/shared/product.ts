@@ -1,4 +1,6 @@
-export class Product {
+import { Document } from 'mongoose';
+
+export class Product extends Document{
     title: string
     price: number
     zipcode: string
