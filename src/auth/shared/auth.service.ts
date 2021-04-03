@@ -26,4 +26,10 @@ export class AuthService {
       access_token: this.jwtService.sign(payload),
     };
   }
+
+  decode(auth: string): {uuid: string}{
+      const jwt = auth.replace('Bearer ', '');
+      return this.jwtService.decode(jwt, { json: true }) as { uuid: string };
+  }
+
 }

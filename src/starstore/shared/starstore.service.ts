@@ -18,7 +18,8 @@ export class ProductService {
     }
     async createProduct(product: Product){
         const createdProduct = new this.productModel(product);
-        return await createdProduct.save();
+        var a = await createdProduct.save();
+        return await this.productModel.findOne({"_id":a.id},{'_id': false, '__v': false}).exec();
     }
 
 }
